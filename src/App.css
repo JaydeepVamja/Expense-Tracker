@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+ul {
+  list-style: none;
+  padding: 0 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ex-border {
+  border: 2px solid gray;
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ex-border-center {
+  border: 2px solid gray;
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input,
+select {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.ex-form {
+  padding: 10px 50px;
+}
+
+.ex-border h3 {
+  color: #2663eb;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.ex-right h3 {
+  color: #dc2626;
+}
+
+.ex-border-center h1 {
+  font-weight: 700;
+  background: linear-gradient(to right, #2663eb, #dc2626);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 30px;
+}
+
+.ex-border-center h5 {
+  color: #49576a;
+  font-size: 26px;
+  padding-top: 15px;
+}
+
+.ex-border-center p {
+  color: #22c55e;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.ex-border-center ul li button {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.ex-border-center ul li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px 50px;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.bold-border-left {
+  border: 5px solid #2663eb;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin-top: -1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bold-border-right {
+  border: 5px solid #dc2626;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin-top: -1px;
+}
+
+.bold-border-center {
+  height: 10px;
+  background-image: linear-gradient(to right, #2663eb, #dc2626);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin-top: -1px;
+}
+
+.ex-border ul li {
+  color: #22c55e;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.ex-border.ex-right ul li {
+  color: #dc2626;
+}
+
+.trans-list {
+  font-size: 18px !important;
+  color: #49576a !important;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.add-btn {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #2663eb, #dc2626)1;
+  border-radius: 10px;
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #2663eb;
+  font-size: 18px;
+  font-weight: 600;
 }
